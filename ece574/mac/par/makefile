@@ -3,4 +3,6 @@ par:
 .PHONY: par
 
 clean:
-	rm -f innovus.log* *.rpt
+	rm -f innovus.log* *.rpt innovus.cmd* *.sdf *.map *.gds *.old
+	rm -rf clock_report timingReports
+.PHONY: clean

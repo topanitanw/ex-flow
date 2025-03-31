@@ -13,3 +13,4 @@ par:
 clean:
 	rm -f innovus.*
 	make -C par $@
+.PHONY: clean
