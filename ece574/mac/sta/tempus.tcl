@@ -1,4 +1,4 @@
-read_lib /opt/cadence/libraries/gsclib045_all_v4.7/gsclib045/timing/slow_vdd1v0_basicCells.lib
+read_lib ../lib/NangateOpenCellLibrary_typical.lib
 
 read_verilog ../syn/outputs/mac_netlist.v
 set_top_module mac

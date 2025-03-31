@@ -37,7 +37,7 @@ syn_map
 syn_opt
 
 if {![info exists ::env(BASENAME)] } {
-  set basename "default"
+	set basename "default"
 } else {
     set basename [getenv BASENAME]
 }

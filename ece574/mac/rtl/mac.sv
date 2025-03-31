@@ -7,20 +7,19 @@ module mac(
     input logic clk
 );
 
-   logic [9:0] y_next;
-   logic [15:0] m16;
-   
-   always_ff @(posedge clk)
-       if (reset)
-	 y <= 10'b0;
-       else
-	 y <= y_next;
-      
-   always_comb
-     begin
-	m16 = x1 * x2;  
-	m = m16[15:6];
-	y_next = y + m;
-     end
-   
+    logic [9:0] y_next;
+    logic [15:0] m16;
+
+    always_ff @(posedge clk)
+        if (reset)
+            y <= 10'b0;
+        else
+            y <= y_next;
+
+    always_comb begin
+        m16 = x1 * x2;
+        m = m16[15:6];
+        y_next = y + m;
+    end
+
 endmodule
